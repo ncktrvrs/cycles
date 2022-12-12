@@ -74,11 +74,14 @@ for (let i = 1; i <= num2; i++) {
 
 // 10. Визначити кількість його парних дільників.
 const num3 = 100;
+let count = 0;
 for (let i = 1; i <= num3; i++) {
   if (num3 % i == 0 && i % 2 == 0) {
-    console.log(i);
+    count++;
   }
 }
+console.log(count);
+
 
 // 11. Знайти суму його парних дільників.
 const num4 = 100;
