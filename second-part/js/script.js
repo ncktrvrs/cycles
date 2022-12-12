@@ -15,8 +15,7 @@ for (let i = 10, max = 100; i <= max; i += 10) {
 // 3. Дане ціле число. Вивести всі цілі числа від 1 до 100, квадрат яких не перевищує числа N.
 const n = 50;
 for (let i = 1, max = 100; i <= max && i * i <= n; i++) {
-  alert(i * i);
-  console.log(i * i);
+  console.log(i);
 }
 
 // 4. Дане ціле число. З'ясувати, чи є воно простим (простим називається число, більше 1, які не мають інших дільників крім 1 і себе).
@@ -26,7 +25,7 @@ do {
 } while (Number.isInteger(isPrime) == false)
 
 for (let i = 2; i <= isPrime; i++) {
-  if (isPrime % i == 0 && isPrime == i && isPrime > 1) {
+  if (isPrime % i == 0 && isPrime == i && isPrime > 1) { //isPrime > 1 - это и есть проверка на один и на ноль. 
     console.log(`${isPrime} is a prime number`);
     break;
   } else {
