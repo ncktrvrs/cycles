@@ -24,8 +24,9 @@ do {
   isPrime = +prompt(`Enter the number`);
 } while (Number.isInteger(isPrime) == false)
 
-for (let i = 2; i <= isPrime; i++) {
-  if (isPrime % i == 0 && isPrime == i && isPrime > 1) { //isPrime > 1 - это и есть проверка на один и на ноль. 
+for (let i = 0; i <= isPrime; i++) {
+  alert('start');
+  if (isPrime % i == 0 && isPrime == i && isPrime > 1) {
     console.log(`${isPrime} is a prime number`);
     break;
   } else {
